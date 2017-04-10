@@ -57,12 +57,27 @@ body > * {
     }
 }
 
+#project-holder > div {
+    height: 80px;
+}
+
 .project-icon {
     height: 80px;
     width: 80px;
     border-radius: 100%;
-    background-color: white;
+    border: 1px solid white;
     margin: auto;
+}
+
+.project-icon:hover {
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.project-icon > img {
+    width: 40px;
+    height: 40px;
+    margin: 20px 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -70,12 +85,24 @@ body > * {
         width: 100px;
         height: 100px;
     }
+
+    .project-icon > img {
+        width: 50px;
+        height: 50px;
+        margin: 25px 25px;
+    }
 }
 
 @media only screen and (min-width: 1367px) {
     .project-icon {
         width: 150px;
         height: 150px;
+    }
+
+    .project-icon > img {
+        width: 75px;
+        height: 75px;
+        margin: 37.5px 37.5px;
     }
 }
 
