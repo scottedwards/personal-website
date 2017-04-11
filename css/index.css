@@ -1,5 +1,13 @@
+body {
+    background-color: #111111;
+}
+
 body > * {
     font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+}
+
+div {
+    border: 1px solid red;
 }
 
 #glass-back {
@@ -52,28 +60,19 @@ body > * {
     color: white;
 }
 
+#project-holder > .row {
+    margin-top: 30px;
+}
+
+#project-holder > .row > [class*="mcol-"] {
+    height: 100px;
+}
+
 @media only screen and (min-width: 768px) {
     #project-holder {
         width: 60%;
     }
 }
-
-#project-holder > div {
-    height: 80px;
-}
-
-@media only screen and (min-width: 768px) {
-    .project {
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (min-width: 1367px) {
-    .project {
-        margin-top: 100px;
-    }
-}
-
 
 .project-icon {
     height: 80px;
