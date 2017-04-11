@@ -6,10 +6,6 @@ body > * {
     font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
 }
 
-div {
-    border: 1px solid red;
-}
-
 #glass-back {
     background-image: url("../img/forest_blur.png");
     background-position: center;
@@ -54,24 +50,18 @@ div {
 /* --------------- CSS FOR THE PROJECTS ----------------*/
 
 #project-holder {
-    width: 80%;
-    margin: auto;
     margin-top: 50px;
     color: white;
 }
 
 #project-holder > .row {
-    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
 }
 
 #project-holder > .row > [class*="mcol-"] {
     height: 100px;
-}
-
-@media only screen and (min-width: 768px) {
-    #project-holder {
-        width: 60%;
-    }
 }
 
 .project-icon {
@@ -123,6 +113,35 @@ div {
     display: none;
 }
 
-#proj-img-div {
-    border-right: 2px solid white;
+/* ---------------- PREVIEW STYLING --------------- */
+#preview {
+    background-color: #336699;
+    margin-bottom: 70px;
+    padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    box-shadow: inset 0 0 2px black, 0 0 2px black;
+}
+
+#preview .row > .proj-text {
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    #preview .row > .proj-img-div {
+        display: block;
+    }
+}
+
+#preview .row > .proj-img-div {
+    text-align: center;
+}
+
+#preview img {
+    height: 100%;
 }
