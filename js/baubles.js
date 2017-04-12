@@ -1,13 +1,18 @@
 $(document).ready(function() {
+    var previousProject = null;
     $(".project-icon").click(function() {
         var icon = $(this);
         if ($("#preview").length > 0) {
             $("#preview").slideToggle("medium", function() {
                 $("#preview").remove();
-                desktopSlideToggle(icon);
+                if (previousProject != icon.attr("data-div-id")) {
+                    desktopSlideToggle(icon);
+                }
+                previousProject = icon.attr("data-div-id");
             }); 
         } else {
             desktopSlideToggle(icon);
+            previousProject = icon.attr("data-div-id");
         }
     });
 });
