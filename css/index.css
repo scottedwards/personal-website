@@ -145,3 +145,17 @@ h3 {
 #preview img {
     height: 100%;
 }
+
+#preview button {
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #114477;
+    border-radius: 5px;
+}
+
+#preview button:hover {
+    background-color: #bbbbbb;
+    cursor: pointer;
+}
