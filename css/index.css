@@ -171,3 +171,12 @@ h3 {
     background-color: #bbbbbb;
     cursor: pointer;
 }
+
+#thisproj {
+    text-align: center;
+    color: white;
+}
+
+#thisproj  a {
+    color: orange;
+}
